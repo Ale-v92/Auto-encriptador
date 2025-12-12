@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador 🕵🏼</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🔐 Encriptador con clave automática🕵🏼</h1>
+    <h2>Instrucciones:</h2>
+    <p> 1️⃣ Escribe tu mensaje en el recuadro inferior.</p>
+    <p> 2️⃣ Presiona "✨ Encriptar" para generar mensaje cifrado y clave.</p>
+    <p> 3️⃣ Copia el mensaje y la clave para enviarlo.</p>
+    <p> 4️⃣ Para desencriptar, pega el mensaje cifrado y la clave, luego presiona "💡 Desencriptar".</p>
+    <p> 5️⃣ Usa el botón "📋 Copiar resultado" para copiar fácilmente.</p>
+        
+
+    <textarea id="mensaje" placeholder="Escribe tu mensaje..."></textarea>
+
+    <div class="inputs">
+        <input id="clave" type="text" placeholder="Clave 🔑 (para desencriptar)">
+       
+    </div>
+
+    <div class="buttons">
+        <button onclick="encriptar()">✨ Encriptar</button>
+        <button onclick="desencriptar()">💡 Desencriptar</button>
+        <button onclick="borrar()">🗑️ Borrar todo</button>
+    </div>
+
+    <textarea id="salida" placeholder="Aquí aparecerá el resultado..." readonly></textarea>
+    <button onclick="copiar()">📋 Copiar resultado</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

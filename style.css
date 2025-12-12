@@ -1,0 +1,124 @@
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(-45deg, #0e0e0e, #11013f, #5011a1, #1a0e3f);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+
+.container {
+    width: 95%;
+    max-width: 700px;
+    background: rgba(22, 22, 22, 0.85); /* semi-transparente para ver el fondo */
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(187,134,252,0.6);
+    color: #e6e6e6;
+    backdrop-filter: blur(12px); /* efecto glass */
+}
+
+h1 {
+    
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    text-align: center;
+    color: #bb86fc;
+    margin-bottom: 24px;
+    text-shadow: 0 0 8px #a855f7;
+}
+
+h2 {
+    
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #bb86fc;
+    margin-bottom: 22px;
+    text-shadow: 0 0 6px #a855f7;
+}
+
+p{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #bb86fc;
+    margin-bottom: 20px;
+    text-shadow: 0 0 7px #a855f7;
+    
+}
+
+
+
+textarea, input {
+    width: 90%;
+    padding: 14px;
+    margin-top: 10px;
+    font-size: 16px;
+    background: #121212;
+    color: #eaeaea;
+    border: 2px solid #3a3a3a;
+    border-radius: 10px;
+    outline: none;
+}
+
+textarea {
+    height: 130px;
+}
+
+textarea:focus, input:focus {
+    border-color: #bb86fc;
+    box-shadow: 0 0 10px rgba(187,134,252,0.6);
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+button {
+    width: 32%; /* ahora caben 3 botones */
+    padding: 14px;
+    background: #6a00ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #bb86fc;
+    box-shadow: 0 0 15px rgba(187,134,252,0.8);
+}
+
+#salida {
+    height: 140px;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 500px) {
+    .buttons {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
